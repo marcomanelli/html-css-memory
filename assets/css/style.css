@@ -21,7 +21,7 @@ body{
 
 header h1{
   color: white;
-  text-shadow: 2px 2px black; 
+  text-shadow: 2px 2px gray; 
   text-align: center;
   font-size: 100px;
   text-transform: uppercase;
@@ -34,7 +34,22 @@ header h1{
   clear: both;
 }
 
+.pattern{
+  position: absolute;
+  top: 0;
+  line-height: 300px;
+  z-index: 2;
+  height: 300px;
+  width: 100%;
+  border-radius: 10px;
+  background-image: url(../img/pattern.png);
+  background-size: cover;
+  background-position: top;
+}
+
 main section .carta{
+  position: relative;
+  display: inline-block;
   background-color: white;
   width: 23%;
   height: 300px;
@@ -43,14 +58,17 @@ main section .carta{
   color: #E61986;
   font-size: 50px;
   text-align: center;
-  padding-top: 230px;
-  text-shadow: 2px 2px black; 
-  box-shadow: 2px 2px black;
+  text-shadow: 2px 2px gray; 
+  box-shadow: 2px 2px gray;
   float: left;
   margin: 20px 1%;
 }
 
 .mongolfiera{
+  position: absolute;
+  top: 0;
+  line-height: 300px;
+  z-index: 1;
   background-image: url(../img/noun_air_balloon_3134741.png);
   background-size: cover;
   background-position: top;
@@ -58,6 +76,14 @@ main section .carta{
 
 .carta:hover{
   color: #E67919;
+}
+
+.pattern:hover{
+  visibility: collapse;
+}
+
+.mongolfiera:hover{
+  
 }
 
 /* FOOTER */
